@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemTra=parseFloat(prompt("Em nhập điểm kiểm tra vào nhé:"));
+    let giuaKy=parseFloat(prompt("Em nhập điểm giữa kỳ vào nhé:"));
+    let cuoiKy=parseFloat(prompt("Em nhập điểm cuối kỳ vào nhé:"));
+    let diemTB=(kiemTra+giuaKy*2+cuoiKy*3)/6;
+    if (diemTB>9.5){
+        alert("Em xếp hạng xuất sắc,giỏi vch!");
+    }else if(diemTB>8.5) {
+        alert("Em xếp hạng học sinh giỏi, keep move!");
+    }else if(diemTB>7){
+        alert("Em xếp hang học sinh Khá!");
+    }else if(diemTB>6){
+        alert("xếp hạng học sinh trung bình khá!");
+    }else if(diemTB>4){
+        alert("xếp hạng trung bình,vừa đủ lên lớp!");
+    }else {
+        alert("học lại nhé!")
+    }
+</script>
+</body>
+</html>
